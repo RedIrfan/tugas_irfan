@@ -14,9 +14,9 @@
         public int $aktivitas_lainlain = 15000000;
         public int $penyisihan_aktivita = 15000000;
 
-        public function __construct(){
+        public function __construct(int $year){
             echo "<p>";
-            $this->print("Aktivita pada tahun 2010:");
+            $this->print("Aktivita pada tahun $year:");
             $this->print("1. Emas                          ", $this->emas);
             $this->print("2. Uang Asing                ", $this->uang_asing);
             $this->print("3. Hak Tarik Khusus      " , ($this->hak_tarik_khusus));
@@ -47,5 +47,5 @@
         }
     }
 
-    $bank = new KeuanganBank();
+    $bank = new KeuanganBank(2010);
 ?>
