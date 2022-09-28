@@ -5,8 +5,6 @@
 //      b. Destructor
 //~~~~~~Jawaban~~~~~~
 
-// a.Constructor
-
     class AnswerClass{
         public function __construct(){
             echo "this comes from a construct function.";
